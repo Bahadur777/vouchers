@@ -32,7 +32,9 @@
     background-color: #444;
 }
 .current-text{
-    font-weight: bold;
+    font-weight: 900;
+    color: #EB6529;
+    text-transform: capitalize;
 }
 .current-voucher-content{
     width: 100%; 
@@ -107,7 +109,9 @@
     background-color: #444;
 }
 .past-text{
-    font-weight: bold;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: #EB6529;
 }
 .past-voucher-content{
     width: 100%; 
@@ -126,6 +130,7 @@
 .offer-title{
     margin: 0;
     font-weight: 900;
+    color: #444;
 }
 
 .past-offer-valid-date{
@@ -157,6 +162,105 @@
 }
 .pc-text{
     margin: 0;
-    color: red;
+    color: #EB6529;
     font-weight: 900;
+}
+
+
+
+/*For phone*/
+
+
+.tab {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .tab button {
+   background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #444;
+  }
+
+  
+  
+
+  .tab button.active {
+  border-bottom: 2px solid #EB6529;
+  }
+  
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+   
+    border-top: none;
+  }
+  .tabcontent {
+    animation: fadeEffect 1s;
+  }
+  
+  
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  .voucher-phone{
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+  }
+  .phone-current-offer{
+      width: 100%;
+  }
+  .phone-current-offer-top{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  }
+  .phone-offer-title{
+      margin: 0;
+      color: #444;
+  }
+  .phone-current-valid-date{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      color: #444;
+  }
+  .phone-current-offer-min{
+      display: flex;
+      justify-content: space-between;
+      color: #444;
+  }
+
+  .phone-offer-content{
+    border-radius: 5px;
+    background: #e0e0e0;
+    
+    padding: 5px;
+    margin-bottom: 5px;
+
+                
+  }
+
+  @media only screen and (max-width: 500px) {
+      .voucher{
+          display: none;
+      }
+  }
+  @media only screen and (min-width: 600px) {
+    .voucher{
+        display: block;
+    }
+    .voucher-phone{
+        display: none;
+    }
 }
